@@ -1,0 +1,25 @@
+[B]AwesomeLeadFilter[/B]
+
+Adds additional filter capabilities for antiquity lead scrolls to AwesomeGuildStore by sirinsidiator.
+
+A new filter category named 'Codex Knowledge' has been added to the Consumable / Miscellaneous sub-category. The filter allows for two options:
+[LIST]
+[*]Never dug out: only shows scrolls for antiquities that have never been dug out
+[*]Codex Entries: only shows scrolls for antiquities with unknown codex entries
+[/LIST]
+
+If any of the filter options is active, only lead scrolls are shown.
+
+@sirinsidiator: please feel free to integrate anything or all directly into AweesomeGuildStore.
+
+Thanks to:
+[LIST]
+[*]sirinsidiator for a truly AwesomeGuildstore
+[*]tomstock for the example code from AGS_UnknownGearFilter used during development
+[*]code65536 for the helper method LootLog.GetAntiquityIdFromItem used in this addon
+[/LIST]
+
+This addon is hosted at [URL="https://www.esoui.com/downloads/fileinfo.php?id=4950]https://www.esoui.com/downloads/fileinfo.php?id=4950[/URL].
+Please post any issues / comments there. 
+
+Please find the source code at [URL="https://github.com/Arglgargl/teso.addons.AwesomeLeadFilter"]https://github.com/Arglgargl/teso.addons.AwesomeLeadFilter[/URL].
