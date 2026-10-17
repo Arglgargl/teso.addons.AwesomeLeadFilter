@@ -9,11 +9,12 @@
 ## Version: 0.2
 ## AddOnVersion:00002
 ## Author: Arglgargl
-## APIVersion: 101050
+## APIVersion: 101051
 ## SavedVariables: AwesomeLeadFilter_Data
-## DependsOn: AwesomeGuildStore LootLog
+## DependsOn: AwesomeGuildStore LootLog LibGetText>=10
 
 AwesomeLeadFilter_Init.lua
 AwesomeLeadFilter_UnknownCodexFilter.lua
 AwesomeLeadFilter_Addon.lua
-
+i18n/en.lua
+i18n/$(language).lua

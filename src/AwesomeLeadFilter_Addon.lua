@@ -1,3 +1,5 @@
+local ALF = AwesomeLeadFilter
+
 function ALF.outputInitMessage()
   ALF.msgGold( ALF.NAME .. " v" .. ALF.VERSION .. " initialized." )
 end

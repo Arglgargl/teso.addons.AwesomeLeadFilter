@@ -1,12 +1,15 @@
 local AGS = AwesomeGuildStore
+
 local LootLog = LootLog
 
 local MultiChoiceFilterBase = AGS.class.MultiChoiceFilterBase
 
 -- remark: normally from local FILTER_ID = AGS.data.FILTER_ID
 local FILTER_ID_UCF = 120
-local SUB_CATEGORY_ID = AGS.data.SUB_CATEGORY_ID
+local ALF = AwesomeLeadFilter
+local gettext = ALF.internal.gettext
 
+local SUB_CATEGORY_ID = AGS.data.SUB_CATEGORY_ID
 
 local UnknownCodexFilter = MultiChoiceFilterBase:Subclass()
 AGS.class.UnknownCodexFilter = UnknownCodexFilter
@@ -20,16 +23,16 @@ function UnknownCodexFilter:Initialize()
   local filterIcons = {}
   filterIcons[1] = {
     id = "never",
-    label = "Never Dug Out",
+    label = gettext("Never Dug Out"),
     icon = "EsoUI/Art/Campaign/overview_indexIcon_bonus_%s.dds",
   }
   filterIcons[2] = {
     id = "missing",
-    label = "Missing Entries",
+    label = gettext("Missing Entries"),
     icon = "EsoUI/Art/Journal/journal_tabIcon_loreLibrary_%s.dds",
   }
 
-  MultiChoiceFilterBase.Initialize(self, FILTER_ID_UCF, AGS.class.FilterBase.GROUP_LOCAL, ("Codex Knowledge"), filterIcons )
+  MultiChoiceFilterBase.Initialize(self, FILTER_ID_UCF, AGS.class.FilterBase.GROUP_LOCAL, gettext("Codex Knowledge"), filterIcons )
 
   self:SetEnabledSubcategories({
     [SUB_CATEGORY_ID.CONSUMABLE_TROPHY] = true,

@@ -1,10 +1,16 @@
-ALF = {}
-ALF.savedVars = {}
+local ADDON_NAME = "AwesomeLeadFilter"
 
-ALF.NAME = "AwesomeLeadFilter"
-ALF.DISPLAY_NAME = "AwesomeLeadFilter"
-ALF.AUTHOR = "Arglgargl"
-ALF.VERSION = "0.2"
-ALF.VARIABLES="AwesomeLeadFilter_Data"
+local ALF = {
+	NAME = ADDON_NAME,
+	DISPLAY_NAME = "AwesomeLeadFilter",
+	AUTHOR = "Arglgargl",
+	VERSION = "0.2",
+	VARIABLES="AwesomeLeadFilter_Data",
+	COLOR_GOLD = "d4af37",
 
-ALF.COLOR_GOLD = "d4af37"
+    savedVars = {},
+    internal = {
+        gettext = LibGetText(ADDON_NAME).gettext
+    }
+}
+_G[ADDON_NAME] = ALF
