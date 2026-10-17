@@ -42,4 +42,4 @@ jobs:
           CHANGELOG=$(cat releng/changelog.txt)
           echo "$DESCRIPTION"
           echo "$CHANGELOG"
-          curl -o -I -H "x-api-token: $TOKEN" -F "id=4950" -F "version=0.0.3" -F "compatible=12.1.0" -F "updatefile=target/AwesomeLeadFilter.zip" -F "description=$DESCRIPTION" -F "changelog=$CHANGELOG" https://api.esoui.com/addons/updatetest
+          curl -o - -I -H "x-api-token: $TOKEN" -F "id=4950" -F "version=0.0.3" -F "compatible=12.1.0" -F "updatefile=target/AwesomeLeadFilter.zip" -F "description=$DESCRIPTION" -F "changelog=$CHANGELOG" https://api.esoui.com/addons/updatetest
