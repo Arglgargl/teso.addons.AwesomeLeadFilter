@@ -19,6 +19,15 @@ Thanks to:
 [*]code65536 for the helper method LootLog.GetAntiquityIdFromItem used in this addon
 [/LIST]
 
+Dependencies:
+[LIST]
+[*]AwesomeGuildstore by sirinsidiator
+[*]LootLog by code65536
+[*]LibGetText by sirinsidiator
+[/LIST]
+
+
+
 This addon is hosted at [URL="https://www.esoui.com/downloads/fileinfo.php?id=4950]https://www.esoui.com/downloads/fileinfo.php?id=4950[/URL].
 Please post any issues / comments there. 
 
