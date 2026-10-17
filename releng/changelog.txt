@@ -1,3 +1,9 @@
+[B]Version 0.0.3[/B]
+[LIST]
+[*]Some internal cleanup
+[*]Started translation (Additionaly needs LibGetText)
+[/LIST]
+
 [B]Version 0.0.2[/B]
 [LIST]
 [*]Initial Release
