@@ -27,7 +27,8 @@ jobs:
       - name: ZIP
         run: |
           mkdir target
-          zip -r target/AwesomeLeadFilter.zip src/*
+          VERSION=$(cat releng/version.txt)
+          zip -r target/AwesomeLeadFilter_$VERSION.zip src/*
       
       - name: Upload
         env:
@@ -36,4 +37,4 @@ jobs:
           DESCRIPTION=$(cat releng/description.txt)
           CHANGELOG=$(cat releng/changelog.txt)
           VERSION=$(cat releng/version.txt)
-          curl -i -H "x-api-token: $TOKEN" -F "id=4950" -F "version=$VERSION" -F "compatible=12.1.0" -F "updatefile=target/AwesomeLeadFilter.zip" -F "description=$DESCRIPTION" -F "changelog=$CHANGELOG" https://api.esoui.com/addons/update
+          curl -i -H "x-api-token: $TOKEN" -F "id=4950" -F "version=$VERSION" -F "compatible=12.1.0" -F "updatefile=target/AwesomeLeadFilter_$VERSION.zip" -F "description=$DESCRIPTION" -F "changelog=$CHANGELOG" https://api.esoui.com/addons/update
