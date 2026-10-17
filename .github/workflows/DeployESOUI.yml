@@ -34,5 +34,8 @@ jobs:
           zip -r target/AwesomeLeadFilter.zip src/*
           ls target/*
       - name: Upload
+
+        env:
+           TOKEN: ${{ secrets.ESOUI_TOKEN }}
         run: |
-          curl -H "x-api-token: xxxxxxx" -F "id=4950" -F "version=0.0.3" -F "compatible=12.1.0" -F "updatefile=target/AwesomeLeadFilter.zip" -F "description=bluubb" -F "changelog=soso" https://api.esoui.com/addons/updatetest
+          curl -H "x-api-token: $TOKEN" -F "id=4950" -F "version=0.0.3" -F "compatible=12.1.0" -F "updatefile=target/AwesomeLeadFilter.zip" -F "description=bluubb" -F "changelog=soso" https://api.esoui.com/addons/updatetest
