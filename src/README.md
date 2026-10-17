@@ -8,10 +8,6 @@ A new filter category named 'Codex Knowledge' has been added to the Consumable /
 
 If any of the filter options is active, only lead scrolls are shown.
 
-TODO: 
-- can we remove the dependency to LootLog?
-- todo i10n
-
 Thanks to:
 - sirinsidiator for a truly AwesomeGuildstore
 - tomstock for the example code from AGS_UnknownGearFilter used during development
